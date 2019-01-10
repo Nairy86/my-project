@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>{{title}}</h1>
+
+{% if usert == 1 %}
+	<p> Bienvenue a l'admin </p>
+{% else %}
+	  
+	<p> Bienvenue a l'adherent </p>
+{% endif %}
+<h1>Progression du site web/Je ne sais pas quoi mettre
+</h1><div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div>
+
+
+<div class="card border-primary mb-3" style="max-width: 20rem;">
+  <div class="card-header">Partenaires</div>
+  <div class="card-body">
+    <h4 class="card-title">Basicompta</h4>
+    <p class="card-text">Utilisez basicompta pour votre associaton, avec basicompta plus besoin d'etre expert comptable!
+  </div>
+</div>
+ <div class="card border-success mb-3" style="max-width: 20rem;">
+  <div class="card-header">AUtres partenaires</div>
+  <div class="card-body">
+    <h4 class="card-title">Autre nom de partenaire</h4>
+    <p class="card-text">Posibilite d'ajouter du javascript et des animations pour etre toxique</p>
+  </div>
+</div>
+
+{% endblock %}
